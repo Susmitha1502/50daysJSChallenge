@@ -1,0 +1,74 @@
+body{
+    padding: 20px;
+    overflow-x: hidden;
+    background-color: rgb(26, 25, 25);
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0.1em;
+    background-color: transparent;
+  }
+
+  
+.header h1{
+    color: #c19270;
+}
+
+.header p{
+    color: rgb(190, 184, 184);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    text-indent: 5em;
+}
+
+.container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2{
+    color: rgb(174, 131, 23);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.container i{
+    margin-left: 0.5rem;
+    color: #c19270;
+}
+
+.panel{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    height: 70vh;
+    flex: 0.5;
+    margin: 10px;
+    color: rgb(43, 43, 245);
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3{
+    position: absolute;
+    font-size: 35px;
+    left: 20px;
+    bottom: 20px; 
+    margin: 0;
+    opacity: 0;  
+}
+
+.panel.active{
+    flex: 7;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
